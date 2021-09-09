@@ -7,15 +7,15 @@ services:
             - "8888:8888"
             - "9999:9999"
         volumes:
-            - "./data/notebooks:/data/notebooks"
-            - "./data/logs:/data/logs"
+            - "/Users/wangyi/data/notebooks:/data/notebooks"
+            - "/Users/wangyi/data/logs:/data/logs"
             - "./jobs:/data/stock/jobs"
             - "./libs:/data/stock/libs"
             - "./web:/data/stock/web"
         environment:
             MYSQL_HOST: mysqldb
             MYSQL_USER: root
-            MYSQL_PWD: mysqldb
+            MYSQL_PWD: q1w2e3r41226
             MYSQL_DB: stock_data
             LANG: zh_CN.UTF-8
             LC_CTYPE: zh_CN.UTF-8
@@ -27,9 +27,9 @@ services:
         image: mysql:5.7
         container_name: mysqldb
         ports:
-            - "3306:3306"
+            - "13307:3306"
         volumes:
-            - "./data/mysqldb/data:/var/lib/mysql"
+            - "/Users/wangyi/data/mysqldb/data:/var/lib/mysql"
         environment:
             MYSQL_ROOT_PASSWORD: mysqldb
             MYSQL_DATABASE: stock_data

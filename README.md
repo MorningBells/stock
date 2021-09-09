@@ -88,13 +88,13 @@ docker run -itd --link=mariadb --name stock  \
 直接启动stock ，使用其他 mysql 数据库，需要配置变量方式：
 
 ```
-docker run -itd --name stock  \
+docker run -itd --name stock
     -v /data/notebooks:/data/notebooks \
     -p 8888:8888 \
     -p 9999:9999 \
     -e MYSQL_HOST=127.0.0.1 \
     -e MYSQL_USER=root \
-    -e MYSQL_PWD=mariadb \
+    -e MYSQL_PWD=q1w2e3r41226 \
     -e MYSQL_DB=stock_data \
     pythonstock/pythonstock:latest
 ```
@@ -355,3 +355,9 @@ https://www.akshare.xyz/zh_CN/latest/data/stock/stock.html#id1
 
 
 
+# docker运行mysql
+docker run -p 13306:3306 --name mysql5.7 -v /Users/wangyi/data/mysql5.7/conf:/etc/mysql/conf.d -v /Users/wangyi/data/mysql5.7/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=q1w2e3r41226 -d mysql:5.7
+# docker进入mysql
+docker exec -it mysql bash
+mysql -h127.0.0.1 -p
+密码是：mysqldb
