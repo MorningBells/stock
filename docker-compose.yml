@@ -13,25 +13,25 @@ services:
             - "./libs:/data/stock/libs"
             - "./web:/data/stock/web"
         environment:
-            MYSQL_HOST: mysqldb
+            MYSQL_HOST: stockdb
             MYSQL_USER: root
-            MYSQL_PWD: q1w2e3r41226
+            MYSQL_PWD: stockdb
             MYSQL_DB: stock_data
             LANG: zh_CN.UTF-8
             LC_CTYPE: zh_CN.UTF-8
             PYTHONIOENCODING: utf-8
         links:
-            - mysqldb:mysqldb
+            - stockdb:stockdb
         restart: always
-    mysqldb:
+    stockdb:
         image: mysql:5.7
-        container_name: mysqldb
+        container_name: stockdb
         ports:
-            - "13307:3306"
+            - "13307:13307"
         volumes:
-            - "/Users/wangyi/data/mysqldb/data:/var/lib/mysql"
+            - "/Users/wangyi/data/stockdb/data:/var/lib/mysql"
         environment:
-            MYSQL_ROOT_PASSWORD: mysqldb
+            MYSQL_ROOT_PASSWORD: stockdb
             MYSQL_DATABASE: stock_data
             TZ: Asia/Shanghai
         command: [

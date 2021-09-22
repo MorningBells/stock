@@ -47,7 +47,7 @@ RUN apt-get update && apt-get install -y gcc make axel python3-dev default-libmy
 # /usr/local/lib/python3.7/site-packages/pandas/
 # 1.解决 pandas 数据插入问题。直接修改数据库驱动 sqlalchemy
 # 修改：statement.replace("INSERT INTO","INSERT IGNORE INTO")
-# /usr/local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/mysqldb.py
+# /usr/local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/mariadb.py
 # 增加了一个 IGNORE 参数。
 # 2.解决torndb在python3下面的问题：
 # http://blog.csdn.net/littlethunder/article/details/8917378
@@ -58,7 +58,7 @@ RUN apt-get update && apt-get install -y gcc make axel python3-dev default-libmy
 
 RUN echo `date +%Y-%m-%d:%H:%M:%S` >> /etc/docker.build && \
     sed -i -e 's/executemany(statement/executemany(statement.replace\("INSERT INTO","INSERT IGNORE INTO")/g' \
-        /usr/local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/mysqldb.py && \
+        /usr/local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/mariadb.py && \
     rm -f /etc/cron.daily/apt-compat /etc/cron.daily/dpkg /etc/cron.daily/passwd && \
     sed -i -e 's/itertools\.izip/zip/g' \
     /usr/local/lib/python3.7/site-packages/torndb.py  && \

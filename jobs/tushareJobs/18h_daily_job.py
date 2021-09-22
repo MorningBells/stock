@@ -9,6 +9,7 @@ import pandas as pd
 from sqlalchemy.types import NVARCHAR
 from sqlalchemy import inspect
 import datetime
+import tushare as ts
 import akshare as ak
 
 """
@@ -37,9 +38,9 @@ def stat_index_all(tmp_datetime):
         # 插入数据库。
         # del data["reason"]
         data["date"] = datetime_int  # 修改时间成为int类型。
-        data = data.drop_duplicates(subset="code", keep="last")
+        data = data.drop_duplicates(subset="代码", keep="last")
         data.head(n=1)
-        common.insert_db(data, "stock_zh_a_spot", False, "`date`,`code`")
+        common.insert_db(data, "stock_zh_a_spot", False, "`date`,`代码`")
     else:
         print("no data .")
 
@@ -50,6 +51,8 @@ def stat_today_all(tmp_datetime):
     datetime_int = (tmp_datetime).strftime("%Y%m%d")
     print("datetime_str:", datetime_str)
     print("datetime_int:", datetime_int)
+
+    # ts获取到的都是code
     data = ts.get_today_all()
     # 处理重复数据，保存最新一条数据。最后一步处理，否则concat有问题。
     if not data is None and len(data) > 0:

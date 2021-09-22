@@ -6,7 +6,7 @@
 ```
 PythonStock V1 是基于Python的pandas，tushare，bokeh，tornado，stockstats，ta-lib等框架开发的全栈股票系统。
 1）可以直接使用docker直接本地部署运行，整个项目在docker hub上压缩后200MB，本地占用500MB磁盘空间。
-2）使用Docker解决了Python库安装问题，使用Mariadb（MySQL）存储数据。借助tushare抓取数据（老API，后续使用tushare pro开发）
+2）使用Docker解决了Python库安装问题，使用MySQL存储数据。借助tushare抓取数据（老API，后续使用tushare pro开发）
 3）使用cron做定时任务，每天进行数据抓取计算，每天18点开始进行数据计算，计算当日数据，使用300天数据进行计算，大约需要15分钟计算完毕。
 4）股票数据接口防止被封，按天进行数据缓存，储存最近3天数据，每天定时清除，同时使用read_pickle to_pickle 的gzip压缩模式存储。
 5）使用tornado开发web系统，支持股票数据，沪深300成份股，中证500成份股，龙虎榜数据，每日股票数据，每日大盘指数行情等
@@ -67,21 +67,22 @@ CCI
 
 ### 使用方法（依赖docker）
 
-使用 mariadb 和 stock 两个镜像
+使用 stockdb 和 stock 两个镜像
 
 ```
 mkdir -p /data/mariadb/data
 docker pull pythonstock/pythonstock:latest
-docker pull mariadb:latest
+docker pull mysql:5.7
 
-docker run --name mariadb -v /data/mariadb/data:/var/lib/mysql \
-    -e MYSQL_ROOT_PASSWORD=mariadb -p 3306:3306 -d mariadb:latest
+docker run --name stockdb -v /Users/wangyi/data/stockdb/data:/var/lib/mysql -v /Users/wangyi/data/mysql/conf:/etc/mysql/conf.d \
+    -e MYSQL_ROOT_PASSWORD=stockdb -p 13307:3306 -d mysql:5.7
 
-docker run -itd --link=mariadb --name stock  \
-    -v /data/notebooks:/data/notebooks \
+docker run -itd --link=stockdb --name stock  \
+    -v /Users/wangyi/data/notebooks:/Users/wangyi/data/notebooks \
     -p 8888:8888 \
     -p 9999:9999 \
     pythonstock/pythonstock:latest
+    
 
 ```
 
@@ -94,24 +95,11 @@ docker run -itd --name stock
     -p 9999:9999 \
     -e MYSQL_HOST=127.0.0.1 \
     -e MYSQL_USER=root \
-    -e MYSQL_PWD=q1w2e3r41226 \
+    -e MYSQL_PWD=stockdb \
     -e MYSQL_DB=stock_data \
     pythonstock/pythonstock:latest
 ```
 
-或者使用docker compose
-
-安装docker-compose
-https://www.runoob.com/docker/docker-compose.html
-
-```
-sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-```
-docker-compose up -d
-```
 
 要想修改文件进行调试，增加当前目录映射，加入到stock里面：
 ```yaml
@@ -278,11 +266,6 @@ https://pypi.org/project/bokeh/#files
 
 
 
-### 12，发现MariaDb 版本不兼容问题
-
-相关数据执行只支持到10.5.4，版本可以使用，但是10.5.8 就有问题了。
-限制死了版本。看来软件也不能瞎升级，都用最新的有问题。可以解决数据问题。
-
 
 
 ### 13，增加日历
@@ -355,9 +338,7 @@ https://www.akshare.xyz/zh_CN/latest/data/stock/stock.html#id1
 
 
 
-# docker运行mysql
-docker run -p 13306:3306 --name mysql5.7 -v /Users/wangyi/data/mysql5.7/conf:/etc/mysql/conf.d -v /Users/wangyi/data/mysql5.7/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=q1w2e3r41226 -d mysql:5.7
-# docker进入mysql
-docker exec -it mysql bash
-mysql -h127.0.0.1 -p
-密码是：mysqldb
+
+
+# akshare: 财经数据获取神器
+https://www.akshare.xyz/

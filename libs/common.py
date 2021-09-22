@@ -1,14 +1,14 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
-# apk add py-mysqldb or
+# apk add py-stockdb or
 
 import platform
 import datetime
 import time
 import sys
 import os
-import MySQLdb
+import pymysql
 from sqlalchemy import create_engine
 from sqlalchemy.types import NVARCHAR
 from sqlalchemy import inspect
@@ -16,13 +16,13 @@ import pandas as pd
 import traceback
 
 # 使用环境变量获得数据库。兼容开发模式可docker模式。
-MYSQL_HOST = os.environ.get('MYSQL_HOST') if (os.environ.get('MYSQL_HOST') != None) else "mysqldb"
+MYSQL_HOST = os.environ.get('MYSQL_HOST') if (os.environ.get('MYSQL_HOST') != None) else "localhost"
 MYSQL_USER = os.environ.get('MYSQL_USER') if (os.environ.get('MYSQL_USER') != None) else "root"
-MYSQL_PWD = os.environ.get('MYSQL_PWD') if (os.environ.get('MYSQL_PWD') != None) else "mysqldb"
+MYSQL_PWD = os.environ.get('MYSQL_PWD') if (os.environ.get('MYSQL_PWD') != None) else "stockdb"
 MYSQL_DB = os.environ.get('MYSQL_DB') if (os.environ.get('MYSQL_DB') != None) else "stock_data"
 
 print("MYSQL_HOST :", MYSQL_HOST, ",MYSQL_USER :", MYSQL_USER, ",MYSQL_DB :", MYSQL_DB)
-MYSQL_CONN_URL = "mysql+mysqldb://" + MYSQL_USER + ":" + MYSQL_PWD + "@" + MYSQL_HOST + ":13306/" + MYSQL_DB + "?charset=utf8"
+MYSQL_CONN_URL = "mysql+pymysql://" + MYSQL_USER + ":" + MYSQL_PWD + "@" + MYSQL_HOST + ":13307/" + MYSQL_DB + "?charset=utf8"
 print("MYSQL_CONN_URL :", MYSQL_CONN_URL)
 
 def engine():
@@ -32,7 +32,7 @@ def engine():
     return engine
 
 def engine_to_db(to_db):
-    MYSQL_CONN_URL_NEW = "mysql+mysqldb://" + MYSQL_USER + ":" + MYSQL_PWD + "@" + MYSQL_HOST + ":13306/" + to_db + "?charset=utf8"
+    MYSQL_CONN_URL_NEW = "mysql+pymysql://" + MYSQL_USER + ":" + MYSQL_PWD + "@" + MYSQL_HOST + ":13307/" + to_db + "?charset=utf8"
     engine = create_engine(
         MYSQL_CONN_URL_NEW,
         encoding='utf8', convert_unicode=True)
@@ -41,7 +41,7 @@ def engine_to_db(to_db):
 # 通过数据库链接 engine。
 def conn():
     try:
-        db = MySQLdb.connect(MYSQL_HOST, MYSQL_USER, MYSQL_PWD, MYSQL_DB, charset="utf8")
+        db = pymysql.connect(host = MYSQL_HOST, user = MYSQL_USER, password = MYSQL_PWD, db = MYSQL_DB, charset="utf8")
         # db.autocommit = True
     except Exception as e:
         print("conn error :", e)
@@ -173,7 +173,7 @@ def run_with_args(run_fun):
 
 
 # 设置基础目录，每次加载使用。
-bash_stock_tmp = "/data/cache/hist_data_cache/%s/%s/"
+bash_stock_tmp = "/Users/wangyi/data/cache/hist_data_cache/%s/%s/"
 if not os.path.exists(bash_stock_tmp):
     os.makedirs(bash_stock_tmp)  # 创建多个文件夹结构。
     print("######################### init tmp dir #########################")

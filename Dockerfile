@@ -29,10 +29,10 @@ ADD libs /data/stock/libs
 ADD web /data/stock/web
 ADD supervisor /data/supervisor
 
-ADD jobs/cron.minutely /etc/cron.minutely
-ADD jobs/cron.hourly /etc/cron.hourly
-ADD jobs/cron.daily /etc/cron.daily
-ADD jobs/cron.monthly /etc/cron.monthly
+ADD jobs/tushareJobs/cron.minutely /etc/cron.minutely
+ADD jobs/tushareJobs/cron.hourly /etc/cron.hourly
+ADD jobs/tushareJobs/cron.daily /etc/cron.daily
+ADD jobs/tushareJobs/cron.monthly /etc/cron.monthly
 
 RUN mkdir -p /data/logs && ls /data/stock/ && chmod 755 /data/stock/jobs/run_* &&  \
     chmod 755 /etc/cron.minutely/* && chmod 755 /etc/cron.hourly/* && \
