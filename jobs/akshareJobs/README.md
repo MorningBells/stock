@@ -17,25 +17,25 @@
 
 #### 商誉专题
 
-  - [ ] 商誉专题-A股商誉市场概况 (ak_a_goodwill_market_appearance)
-  - [ ] 商誉专题-商誉减值预期明细 (ak_a_goodwill_impairment_expectations_data)
-  - [ ] 商誉专题-个股商誉减值明细 (ak_a_goodwill_impairment_data)
-  - [ ] 商誉专题-个股商誉明细 (ak_a_goodwill_data)
-  - [ ] 商誉专题-行业商誉 (ak_a_goodwill_industry_honor_data)
+  - [x] 商誉专题-A股商誉市场概况 (ak_a_goodwill_market_appearance)
+  - [x] 商誉专题-商誉减值预期明细 (ak_a_goodwill_impairment_expectations_data)
+  - [x] 商誉专题-个股商誉减值明细 (ak_a_goodwill_impairment_data)
+  - [x] 商誉专题-个股商誉明细 (ak_a_goodwill_data)
+  - [x] 商誉专题-行业商誉 (ak_a_goodwill_industry_honor_data)
 
 
 
 #### 股票分区
 
-  - [ ] 次新股(ak_a_partition_ipo)
-  - [ ] 风险警示板(ak_a_partition_st)
-  - [ ] 新股列表 (ak_a_partition_new)
-  - [ ] 两网以及退市股 (ak_a_partition_stop)
-  - [ ] 新股数据-打新收益率 (ak_a_partition_new_yields)
-  - [ ] 新股数据-新股申购与中签 (ak_a_partition_initial_public_offerings)
-  - [ ] 科创板-实时行情数据 (ak_a_partition_ipo_science_board_realtime_data)
-  - [ ] 科创板-历史行情数据 (ak_a_partition_ipo_science_board_history_data)
-  - [ ] 科创板公告 (ak_a_partition_ipo_science_board_history_notice)
+  - [x] 次新股(ak_a_partition_ipo)
+  - [x] 风险警示板(ak_a_partition_st)
+  - [x] 新股列表 (ak_a_partition_new)
+  - [x] 两网以及退市股 (ak_a_partition_stop)
+  - [x] 新股数据-打新收益率 (ak_a_partition_new_yields)
+  - [x] 新股数据-新股申购与中签 (ak_a_partition_initial_public_offerings)
+  - [x] 科创板-实时行情数据 (ak_a_partition_ipo_science_board_realtime_data)
+  - [x] 科创板-历史行情数据 (ak_a_partition_ipo_science_board_history_data)
+  - [x] 科创板公告 (ak_a_partition_ipo_science_board_history_notice)
 
 
 
@@ -46,7 +46,6 @@
   - [ ] 资讯数据-每日快讯
   - [ ] 手续费-国内券商佣金
   - [ ] 一致行动人
-
   - [ ] 盈利预测
   - [ ] 股票热度
   - [ ] 盘口异动
