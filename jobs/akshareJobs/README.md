@@ -41,30 +41,42 @@
 
 #### 数据分析
 
-  - [ ] 赚钱效益分析(ak_a_analyse_benefits)
-  - [ ] 调查平均持仓(ak_a_analyse_average_position)
-  - [ ] 资讯数据-每日快讯(ak_a_analyse_daily_information_data)
-  - [ ] 手续费-国内券商佣金(ak_a_analyse_domestic_brokerage_fees)
-  - [ ] 一致行动人(ak_a_analyse_concerted_action_man)
-  - [ ] 盈利预测(ak_a_analyse_profit_forecast)
-  - [ ] 股票热度(ak_a_analyse_stock_heat)
-  - [ ] 盘口异动(ak_a_analyse_plate_rim_movement)
-  - [ ] 两市停复牌(ak_a_analyse_stopped_trading)
-  - [ ] 股票账户统计-股票账户统计月度(ak_a_analyse_stock_Account_statistics_monthly)
-  - [ ] 分析师指数-分析师指数最新排名(ak_a_analyse_analyst_index_latest_ranking)
-  - [ ] 分析师指数-分析师详情(ak_a_analyse_analyst_details)
-  - [ ] 千股千评(ak_a_analyse_thousand_comments)
-  - [ ] 企业社会责任(ak_a_analyse_corporate_social_responsibility)
-  - [ ] 机构调研统计(ak_a_analyse_institutional_research_statistics)
-  - [ ] 机构调研详细(ak_a_analyse_institutional_research_details)
-  - [ ] 股权质押市场(ak_a_analyse_equity_pledge_market)
-  - [ ] 上市公司质押比例(ak_a_analyse_companies_pledge_ratio)
-  - [ ] 重要股东股权质押明细(ak_a_analyse_important_shareholders_pledge_details)
-  - [ ] 质押公司分布统计证券公司(ak_a_analyse_securities_companies_distribution_statistics)
-  - [ ] 质押公司分布统计银行(ak_a_analyse_bank_pledge_company_distribution_statistics)
-  - [ ] 上市公司质押比例(ak_a_analyse_companies_pledge_ratio)
-  - [ ] 高管持股-股东增减持(ak_a_analyse_executive_holding_shareholders_increase_decrease)
-  - [ ] 高管持股-分红配送(ak_a_analyse_executive_holding_dividend_distribution)
+  - [x] 赚钱效益分析(ak_a_analyse_benefits)
+  - [x] 调查平均持仓(ak_a_analyse_average_position)
+  - [x] 资讯数据-每日快讯(ak_a_analyse_daily_information_data)
+  - 手续费-国内券商佣金
+    - 以万 2.5 佣金结构为例 
+      上海证券交易所
+      项目	费用	收取部门
+      证管费	万 0.2	由证监会收取
+      经手费	万 0.487	由交易所收取
+      券商收入	万 1.813	由券商收取
+    - 以万 1.2 佣金结构为例
+      上海证券交易所
+      项目	费用	收取部门
+      证管费	万 0.2	由证监会收取
+      经手费	万 0.487	由交易所收取
+      券商收入	万 0.513	由券商收取
+  - [x] 一致行动人(ak_a_analyse_concerted_action_man)
+  - [x] 盈利预测(ak_a_analyse_profit_forecast)
+  - [x] 股票热度(ak_a_analyse_stock_heat)
+  - [x] 盘口异动(ak_a_analyse_plate_rim_movement)
+  - [x] 两市停复牌(ak_a_analyse_stopped_trading)
+  - [x] 股票账户统计-股票账户统计月度(ak_a_analyse_stock_Account_statistics_monthly)
+  - [x] 分析师指数-分析师指数最新排名(ak_a_analyse_analyst_index_latest_ranking)
+  - [x] 分析师指数-分析师详情(ak_a_analyse_analyst_details)
+  - [x] 千股千评(ak_a_analyse_thousand_comments)
+  - [x] 企业社会责任(ak_a_analyse_corporate_social_responsibility)
+  - [x] 机构调研统计(ak_a_analyse_institutional_research_statistics)
+  - [x] 机构调研详细(ak_a_analyse_institutional_research_details)
+  - [x] 股权质押市场(ak_a_analyse_equity_pledge_market)
+  - [x] 上市公司质押比例(ak_a_analyse_companies_pledge_ratio)
+  - [x] 重要股东股权质押明细(ak_a_analyse_important_shareholders_pledge_details)
+  - [x] 质押公司分布统计证券公司(ak_a_analyse_securities_companies_distribution_statistics)
+  - [x] 质押公司分布统计银行(ak_a_analyse_bank_pledge_company_distribution_statistics)
+  - [x] 上市公司质押比例_行业数据(ak_a_analyse_industry_pledge_ratio)
+  - [x] 高管持股-股东增减持(ak_a_analyse_executive_holding_shareholders_increase_decrease)
+  - [x] 高管持股-分红配送(ak_a_analyse_executive_holding_dividend_distribution)
 
 
 
@@ -222,3 +234,9 @@
        # 34）、当股价跌破前一天涨停板价时，说明前一天的涨停毫无意义，就是最后一棒！
        # 35）、炒股：不需要什么提前预测，也不需要到处打听消息，只要看懂了盘面，就能轻轻松松逃顶和抄底.盘面反映一切！
        # 36）、在相对高位区，“事故多发地带”股民应采取“一看二慢三通过”和“宁等三分不抢一秒”及“卖要坚决、买要谨慎、割肉要狠、止损要快”的策略！
+    
+    # 涨跌比：即沪深两市上涨个股所占比例，体现的是市场整体涨跌，占比越大则代表大部分个股表现活跃。
+    # 涨停板数与跌停板数的意义：涨停家数在一定程度上反映了市场的投机氛围。当涨停家数越多，则市场的多头氛围越强。真实涨停是非一字无量涨停。真实跌停是非一字无量跌停。
+  - # 所谓无量涨停板,指的是涨停当日成交量非常小,日换手率低于5%。一般来说,无量涨停中换手率越小越好,低于1%是最佳状态,不过在实际操作中,低于5%也算“无量”,起码不能超过10%。
+    # 一般来说,无量涨停的后市上涨空间巨大,需高度关注,并随时准备在后市震荡中介入。
+    # 放量涨停具体就是指，在股价涨停的情况下或者是过程中，成交量相对于一般的情况出现了明显的波动，放出了非常巨大的量。
