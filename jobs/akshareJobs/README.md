@@ -94,13 +94,13 @@
   - [x] 沪深港通持股-沪深港通历史数据(ak_a_holding_history_data)
 
 #### 资金流向
-  - [ ] 资金流向-个股资金流(ak_a_capital_flow_individual)
-  - [ ] 资金流向-概念资金流(ak_a_capital_flow_concept)
-  - [ ] 资金流向-行业资金流(ak_a_capital_flow_industry)
-  - [ ] 资金流向-大单追踪(ak_a_capital_flow_large_order_tracking)
-  - [ ] 资金流向-个股资金流排名(ak_a_capital_flow_individual_ranking)
-  - [ ] 资金流向-大盘资金流(ak_a_capital_flow_market)
-  - [ ] 资金流向-板块资金流排名(ak_a_capital_flow_plate_ranking)
+  - [x] 资金流向-个股资金流(ak_a_capital_flow_individual)
+  - [x] 资金流向-概念资金流(ak_a_capital_flow_concept)
+  - [x] 资金流向-行业资金流(ak_a_capital_flow_industry)
+  - [x] 资金流向-大单追踪(ak_a_capital_flow_large_order_tracking)
+  - [x] 资金流向-个股资金流排名(ak_a_capital_flow_individual_ranking)
+  - [x] 资金流向-大盘资金流(ak_a_capital_flow_market)
+  - [x] 资金流向-板块资金流排名(ak_a_capital_flow_plate_ranking)
 
 
 
