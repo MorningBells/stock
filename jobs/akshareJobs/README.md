@@ -81,17 +81,17 @@
 
 
 #### 持股统计
-  - [ ] 沪深港通持股-北向净流入(ak_a_holding_north_inflow)
-  - [ ] 沪深港通持股-北向资金余额(ak_a_holding_north_fund_balance)
-  - [ ] 沪深港通持股-北向累计净流入(ak_a_holding_north_accumulated_inflow)
-  - [ ] 沪深港通持股-南向净流入(ak_a_holding_south_inflow)
-  - [ ] 沪深港通持股-南向资金余额(ak_a_holding_south_fund_balance)
-  - [ ] 沪深港通持股-南向累计净流入(ak_a_holding_south_accumulated_inflow)
-  - [ ] 沪深港通持股-板块排行(ak_a_holding_plate_ranking)
-  - [ ] 沪深港通持股-个股排行(ak_a_holding_individual_ranking)
-  - [ ] 沪深港通持股-每日个股统计(ak_a_holding_individual_statistics_daily)
-  - [ ] 沪深港通持股-每日机构统计(ak_a_holding_institutional_statistics_daily)
-  - [ ] 沪深港通持股-沪深港通历史数据(ak_a_holding_history_data)
+  - [x] 沪深港通持股-北向净流入(ak_a_holding_north_inflow)
+  - [x] 沪深港通持股-北向资金余额(ak_a_holding_north_fund_balance)
+  - [x] 沪深港通持股-北向累计净流入(ak_a_holding_north_accumulated_inflow)
+  - [x] 沪深港通持股-南向净流入(ak_a_holding_south_inflow)
+  - [x] 沪深港通持股-南向资金余额(ak_a_holding_south_fund_balance)
+  - [x] 沪深港通持股-南向累计净流入(ak_a_holding_south_accumulated_inflow)
+  - [x] 沪深港通持股-板块排行(ak_a_holding_plate_ranking)
+  - [x] 沪深港通持股-个股排行(ak_a_holding_individual_ranking)
+  - [x] 沪深港通持股-每日个股统计(ak_a_holding_individual_statistics_daily)
+  - [x] 沪深港通持股-每日机构统计(ak_a_holding_institutional_statistics_daily)
+  - [x] 沪深港通持股-沪深港通历史数据(ak_a_holding_history_data)
 
 #### 资金流向
   - [ ] 资金流向-个股资金流(ak_a_capital_flow_individual)
@@ -240,3 +240,10 @@
   - # 所谓无量涨停板,指的是涨停当日成交量非常小,日换手率低于5%。一般来说,无量涨停中换手率越小越好,低于1%是最佳状态,不过在实际操作中,低于5%也算“无量”,起码不能超过10%。
     # 一般来说,无量涨停的后市上涨空间巨大,需高度关注,并随时准备在后市震荡中介入。
     # 放量涨停具体就是指，在股价涨停的情况下或者是过程中，成交量相对于一般的情况出现了明显的波动，放出了非常巨大的量。
+
+    * 什么是南向北向资金
+      * 北向资金，就是从南方来的资金，通常指通过香港市场流入A股的资金，也就是所谓外资。南向资金，自然是南下流入香港市场的资金了。 
+      * 在股市中，“南”代表中国香港，“北”代表中国大陆。从沪港通衍生出来的概念。香港买沪市叫北上，沪市买香港叫南下。 
+      * 2019年8月19日，北向资金净流入84.83亿元，为今年以来北向资金第六大单日净流入规模。同时，近期央行披露数据显示，北向资金占外资持股比例达63.71%。 
+      * 值得注意的是，二季度末境外机构和个人持有境内股票16473.00亿元，较一季度末的16838.88亿元减少365.88亿元。此外，二季度大盘呈下跌态势，北向资金整体出现净流出，不过持股市值不降反升，在一定程度上也体现出北向资金的选股能力。
+      * 中国大陆资本流动是受到管制不是自由流动的，但是香港的资本流动是自由流动的，人民币升值期间会有很多香港资金和国际资金通过各种非正常渠道进入内地，博取人民币升值的收益。
