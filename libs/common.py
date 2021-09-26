@@ -51,23 +51,23 @@ def conn():
 
 
 # 定义通用方法函数，插入数据库表，并创建数据库主键，保证重跑数据的时候索引唯一。
-def insert_db(data, table_name, write_index, primary_keys):
+def insert_db(data, table_name, write_index, primary_keys, varchar_length=255):
     # 插入默认的数据库。
-    insert_other_db(MYSQL_DB, data, table_name, write_index, primary_keys)
+    insert_other_db(MYSQL_DB, data, table_name, write_index, primary_keys, varchar_length)
 
 
-def mapping_df_types(df):
+def mapping_df_types(df, varchar_length):
     d_type_dict = {}
     for i, j in zip(df.columns, df.dtypes):
         if "text" in str(i):
             d_type_dict.update({i: Text})
         else:
-            d_type_dict.update({i: NVARCHAR(length=255)})
+            d_type_dict.update({i: NVARCHAR(length=varchar_length)})
     return d_type_dict
 
 
 # 增加一个插入到其他数据库的方法。
-def insert_other_db(to_db, data, table_name, write_index, primary_keys):
+def insert_other_db(to_db, data, table_name, write_index, primary_keys, varchar_length):
     # 定义engine
     engine_mysql = engine_to_db(to_db)
     # 使用 http://docs.sqlalchemy.org/en/latest/core/reflection.html
@@ -79,7 +79,7 @@ def insert_other_db(to_db, data, table_name, write_index, primary_keys):
         # 插入到第一个位置：
         col_name_list.insert(0, data.index.name)
     print(col_name_list)
-    d_type = mapping_df_types(data)
+    d_type = mapping_df_types(data, varchar_length)
     data.to_sql(name=table_name, con=engine_mysql, schema=to_db, if_exists='append',
                 dtype=d_type, index=write_index)
 

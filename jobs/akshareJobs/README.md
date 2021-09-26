@@ -105,76 +105,77 @@
 
 
 #### 基本面分析
-  - [ ] 基本面数据-财务报表
-  - [ ] 基本面数据-财务摘要
-  - [ ] 基本面数据-财务指标
-  - [ ] 基本面数据-历史分红
-  - [ ] 基本面数据-股东户数
-  - [ ] 基本面数据-分红配股
-  - [ ] 基本面数据-新股发行
-  - [ ] 基本面数据-股票增发
-  - [ ] 基本面数据-限售解禁
-  - [ ] 基本面数据-流通股东
-  - [ ] 基本面数据-板块行情
-  - [ ] 基本面数据-板块详情
-  - [ ] 基本面数据-股票列表(A股、上证、两网以及退市)
-  - [ ] 基本面数据-基金持股
-  - [ ] 基本面数据-主要股东
-  - [ ] 基本面数据-机构持股-机构持股一览表
-  - [ ] 基本面数据-机构持股-机构持股详情
-  - [ ] 基本面数据-机构推荐-机构推荐池
-  - [ ] 基本面数据-机构推荐-股票评级记录
-  - [ ] 基本面数据-机构推荐-投资评级
-  - [ ] 基本面数据-机构推荐-行业市盈率
-  - [ ] 基本面数据-机构推荐-新股过会
-  - [ ] 基本面数据-机构推荐-新股发行
-  - [ ] 基本面数据-券商业绩报告
-  - [ ] 基本面数据-A股市盈率
-  - [ ] 基本面数据-A股市净率
-  - [ ] 基本面数据-A股个股指标
-  - [ ] 基本面数据-A股等权重与中位数市盈率
-  - [ ] 基本面数据-A股等权重与中位数市净率
-  - [ ] 基本面数据-创新高与新低的股票数量
-  - [ ] 基本面数据-破净股统计
-  - [ ] 基本面数据-基金持股
-  - [ ] 基本面数据-基金持股明细
-  - [ ] 基本面数据-龙虎榜-营业厅排名-上榜次数最多
-  - [ ] 基本面数据-龙虎榜-营业厅排名-资金实力最强
-  - [ ] 基本面数据-龙虎榜-营业厅排名-抱团操作实力
-  - [ ] 基本面数据-龙虎榜-每日详情
-  - [ ] 基本面数据-龙虎榜-个股上榜统计
-  - [ ] 基本面数据-龙虎榜-营业上榜统计
-  - [ ] 基本面数据-龙虎榜-机构席位追踪
-  - [ ] 基本面数据-龙虎榜-机构席位成交明细
-  - [ ] 基本面数据-首发申报信息
-  - [ ] 基本面数据-注册制审批-科创板
-  - [ ] 基本面数据-注册制审批-创业板
-  - [ ] 基本面数据-注册制审批-达标企业
-  - [ ] 基本面数据-增发
-  - [ ] 基本面数据-配股
+  - [x] 基本面数据-财务报表(ak_a_fundamental_financial_statements)
+  - [x] 基本面数据-财务摘要(ak_a_fundamental_financial_summary)
+  - [x] 基本面数据-财务指标(ak_a_fundamental_financial_indicators)
+  - [x] 基本面数据-历史分红(ak_a_fundamental_historical_dividend)
+  - [x] 基本面数据-股东户数(ak_a_fundamental_shareholders_number)
+  - [x] 基本面数据-分红配股(ak_a_fundamental_dividend_rights_offering)
+  - [x] 基本面数据-新股发行(ak_a_fundamental_new_shares_issued)
+  - [x] 基本面数据-股票增发(ak_a_fundamental_stock_issuance)
+  - [x] 基本面数据-限售解禁(ak_a_fundamental_sales_ban_lifting)
+  - [x] 基本面数据-流通股东(ak_a_fundamental_circulation_shareholders)
+  - [x] 基本面数据-板块行情(ak_a_fundamental_plate_market)
+  - [x] 基本面数据-板块详情(ak_a_fundamental_plate_details)
+  - [x] 基本面数据-股票列表(A股、上证、两网以及退市)(ak_a_fundamental_stocks_list)
+  - [x] 基本面数据-基金持股(ak_a_fundamental_fund_holding)
+  - [x] 基本面数据-基金持股明细(ak_a_fundamental_fund_holding_detail)
+  - [x] 基本面数据-主要股东(ak_a_fundamental_main_shareholders)
+  - [x] 基本面数据-机构持股-机构持股一览表(ak_a_fundamental_institutional_holdings_list)
+  - [x] 基本面数据-机构持股-机构持股详情(ak_a_fundamental_institutional_holdings_details)
+  - [x] 基本面数据-机构推荐-机构推荐池(ak_a_fundamental_institutional_recommendation_pool)
+  - [x] 基本面数据-机构推荐-股票评级记录(ak_a_fundamental_institutional_recom_stock_rating_records)
+  - [x] 基本面数据-机构推荐-投资评级(ak_a_fundamental_institutional_recom_investment_rating)
+  - [x] 基本面数据-机构推荐-行业市盈率(ak_a_fundamental_institutional_recomm_industry_p_e_ratio)
+  - [x] 基本面数据-机构推荐-新股过会(ak_a_fundamental_institutional_recom_new_shares_held)
+  - [x] 基本面数据-机构推荐-新股发行(ak_a_fundamental_institutional_recom_new_shares_issued)
+  - [x] 基本面数据-券商业绩报告(ak_a_fundamental_brokerage_performance_report)
+  - [x] 基本面数据-A股市盈率(ak_a_fundamental_a_share_pe_ratio)
+  - [x] 基本面数据-A股市净率(ak_a_fundamental_a_share_market_net_rate)
+  - [x] 基本面数据-A股个股指标(ak_a_fundamental_a_share_stock_index)
+  - [x] 基本面数据-A股等权重与中位数市盈率(ak_a_fundamental_a_share_equal_weight_and_median_pe_ratio)
+  - [x] 基本面数据-A股等权重与中位数市净率(ak_a_fundamental_a_shareEqualWeight_medianMarketToMarket_ratio)
+  - [x] 基本面数据-创新高与新低的股票数量(ak_a_fundamental_new_highs_and_new_low_number_of_stocks)
+  - [x] 基本面数据-破净股统计(ak_a_fundamental_net_stock_statistics)
+  - [x] 基本面数据-首发申报信息(ak_a_fundamental_first_declaration_information)
+  - [ ] 基本面数据-注册制审批-科创板(ak_a_fundamental_registration_system_examination_approval_science_board)
+  - [ ] 基本面数据-注册制审批-创业板(ak_a_fundamental_registration_system_examination_approval_entrepreneurship_ship)
+  - [ ] 基本面数据-注册制审批-达标企业(ak_a_fundamental_registration_system_examination_approval_standard_enterprises)
+  - [ ] 基本面数据-增发(ak_a_fundamental_additional_issuance)
+  - [ ] 基本面数据-配股(ak_a_fundamental_rights_offering)
 
+
+#### 龙虎榜
+  - [ ] 龙虎榜-营业厅排名-上榜次数最多(ak_a_topBrands_business_hall_ranking_most_on_list)
+  - [ ] 龙虎榜-营业厅排名-资金实力最强(ak_a_topBrands_business_hall_ranking_strongest_financial_strength)
+  - [ ] 龙虎榜-营业厅排名-抱团操作实力(ak_a_topBrands_business_hall_ranking_group_operation_strength)
+  - [ ] 龙虎榜-每日详情(ak_a_topBrands_daily_details)
+  - [ ] 龙虎榜-个股上榜统计(ak_a_topBrands_individual_statistics)
+  - [ ] 龙虎榜-营业上榜统计(ak_a_topBrands_business_hall_statistics)
+  - [ ] 龙虎榜-机构席位追踪(ak_a_topBrands_institutional_seat_tracking)
+  - [ ] 龙虎榜-机构席位成交明细(ak_a_topBrands_institutional_seat_transaction_details)
 
 
 #### 年报季报
 
-  - [ ] 年报季报-业绩报表
-  - [ ] 年报季报-业绩快报
-  - [ ] 年报季报-业绩预告
-  - [ ] 年报季报-预计披露时间
-  - [ ] 年报季报-资产负债表
-  - [ ] 年报季报-利润表
-  - [ ] 年报季报-现金流量表
+  - [ ] 年报季报-业绩报表(ak_a_annual_quarterly_report_performance_statements)
+  - [ ] 年报季报-业绩快报(ak_a_annual_quarterly_report_performance_express)
+  - [ ] 年报季报-业绩预告(ak_a_annual_quarterly_report_performance_forecast)
+  - [ ] 年报季报-预计披露时间(ak_a_annual_quarterly_report_expected_disclosure_time)
+  - [ ] 年报季报-资产负债表(ak_a_annual_quarterly_report_balance_sheet)
+  - [ ] 年报季报-利润表(ak_a_annual_quarterly_report_profit_statement)
+  - [ ] 年报季报-现金流量表(ak_a_annual_quarterly_report_cash_flow)
 
 
 
 #### 涨停板
 
-  - [ ] 涨停板行情-涨停股池
-  - [ ] 涨停板行情-昨日涨停板股池
-  - [ ] 涨停板行情-强势股池
-  - [ ] 涨停板行情-次新股池
-  - [ ] 涨停板行情-炸板股池
-  - [ ] 涨停板行情-跌停股池
+  - [ ] 涨停板行情-涨停股池(ak_a_raising_limit_pool)
+  - [ ] 涨停板行情-昨日涨停板股池(ak_a_raising_limit_yesterday)
+  - [ ] 涨停板行情-强势股池(ak_a_raising_limit_strong_pool)
+  - [ ] 涨停板行情-次新股池(ak_a_raising_limit_ipo_pool)
+  - [ ] 涨停板行情-炸板股池(ak_a_raising_limit_fried_plate)
+  - [ ] 涨停板行情-跌停股池(ak_a_raising_limit_limit_down)
 
 
 
@@ -186,7 +187,11 @@
   - [ ] 自动选择要演算的股票
   - [ ] 自动剔除要演算的股票
   - [ ] 记录演算的操作步骤
-  
+ 
+
+4. 地量见地价
+5. 天量见天价
+
     1. 一些基本概念
       # 股票数据复权
             # 1.为何要复权：由于股票存在配股、分拆、合并和发放股息等事件，会导致股价出现较大的缺口。 若使用不复权的价格处理数据、计算各种指标，将会导致它们失去连续性，且使用不复权价格计算收益也会出现错误。 为了保证数据连贯性，常通过前复权和后复权对价格序列进行调整。
@@ -247,3 +252,6 @@
       * 2019年8月19日，北向资金净流入84.83亿元，为今年以来北向资金第六大单日净流入规模。同时，近期央行披露数据显示，北向资金占外资持股比例达63.71%。 
       * 值得注意的是，二季度末境外机构和个人持有境内股票16473.00亿元，较一季度末的16838.88亿元减少365.88亿元。此外，二季度大盘呈下跌态势，北向资金整体出现净流出，不过持股市值不降反升，在一定程度上也体现出北向资金的选股能力。
       * 中国大陆资本流动是受到管制不是自由流动的，但是香港的资本流动是自由流动的，人民币升值期间会有很多香港资金和国际资金通过各种非正常渠道进入内地，博取人民币升值的收益。
+    * 什么是炸板
+      * 炸板是一种口语化的表达，指的是股票封死涨停板后又有大量抛单把价格又打下来，把封板给炸了，这种现象就叫炸板。通常炸板对于股市来说是一件坏事，因为炸板有可能预示着这个股票会有利空。 
+      * 值得一提的是，在股市中，涨停也被称作为打板，例如当一只股票涨停了，就会说这只股票打板了，跌停则称为砸板。
