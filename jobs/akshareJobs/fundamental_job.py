@@ -696,6 +696,71 @@ def stock_ipo_declare(tmp_datetime):
         print("error :", e)
 
 
+# 基本面数据-注册制审批-科创板()
+def stock_register_kcb(tmp_datetime):
+    #############################
+    # 描述: 获取新浪财经-股本股东-基金持股
+    try:
+        data = ak.stock_register_kcb()
+        data["自增序列"] = range(1, len(data)+1)
+
+        common.insert_db(data, "ak_a_fundamental_registration_examination_science_board", False, "`序号`,`自增序列`")
+    except Exception as e:
+        print("error :", e)
+
+
+# 基本面数据-注册制审批-创业板()
+def stock_register_cyb(tmp_datetime):
+    #############################
+    # 描述: 获取新浪财经-股本股东-基金持股
+    try:
+        data = ak.stock_register_cyb()
+        data["自增序列"] = range(1, len(data)+1)
+
+        common.insert_db(data, "ak_a_fundamental_registration_examination_entrepreneurship_ship", False, "`序号`,`自增序列`")
+    except Exception as e:
+        print("error :", e)
+
+
+# 基本面数据-注册制审批-达标企业()
+def stock_register_db(tmp_datetime):
+    #############################
+    # 描述: 获取新浪财经-股本股东-基金持股
+    try:
+        data = ak.stock_register_db()
+        data["自增序列"] = range(1, len(data)+1)
+
+        common.insert_db(data, "ak_a_fundamental_registration_examination_standard_enterprises", False, "`序号`,`自增序列`")
+    except Exception as e:
+        print("error :", e)
+
+
+# 基本面数据-增发()
+def stock_em_qbzf(tmp_datetime):
+    #############################
+    # 描述: 获取新浪财经-股本股东-基金持股
+    try:
+        data = ak.stock_em_qbzf()
+        data["自增序列"] = range(1, len(data)+1)
+
+        common.insert_db(data, "ak_a_fundamental_additional_issuance", False, "`股票代码`,`自增序列`")
+    except Exception as e:
+        print("error :", e)
+
+
+# 基本面数据-配股()
+def stock_em_pg(tmp_datetime):
+    #############################
+    # 描述: 获取新浪财经-股本股东-基金持股
+    try:
+        data = ak.stock_em_pg()
+        data["自增序列"] = range(1, len(data)+1)
+
+        common.insert_db(data, "ak_a_fundamental_rights_offering", False, "`股票代码`,`自增序列`")
+    except Exception as e:
+        print("error :", e)
+
+
 
 # main函数入口
 if __name__ == '__main__':
@@ -732,6 +797,12 @@ if __name__ == '__main__':
     # common.run_with_args(stock_a_all_pb)
     # common.run_with_args(stock_a_high_low_statistics)
     # common.run_with_args(stock_a_below_net_asset_statistics)
-    common.run_with_args(stock_ipo_declare)
+    # common.run_with_args(stock_ipo_declare)
+    # common.run_with_args(stock_register_kcb)
+    # common.run_with_args(stock_register_cyb)
+    common.run_with_args(stock_register_db)
+    common.run_with_args(stock_em_qbzf)
+    common.run_with_args(stock_em_pg)
+
 
 

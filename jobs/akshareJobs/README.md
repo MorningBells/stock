@@ -138,11 +138,11 @@
   - [x] 基本面数据-创新高与新低的股票数量(ak_a_fundamental_new_highs_and_new_low_number_of_stocks)
   - [x] 基本面数据-破净股统计(ak_a_fundamental_net_stock_statistics)
   - [x] 基本面数据-首发申报信息(ak_a_fundamental_first_declaration_information)
-  - [ ] 基本面数据-注册制审批-科创板(ak_a_fundamental_registration_system_examination_approval_science_board)
-  - [ ] 基本面数据-注册制审批-创业板(ak_a_fundamental_registration_system_examination_approval_entrepreneurship_ship)
-  - [ ] 基本面数据-注册制审批-达标企业(ak_a_fundamental_registration_system_examination_approval_standard_enterprises)
-  - [ ] 基本面数据-增发(ak_a_fundamental_additional_issuance)
-  - [ ] 基本面数据-配股(ak_a_fundamental_rights_offering)
+  - [x] 基本面数据-注册制审批-科创板(ak_a_fundamental_registration_examination_science_board)
+  - [x] 基本面数据-注册制审批-创业板(ak_a_fundamental_registration_examination_entrepreneurship_ship)
+  - [x] 基本面数据-注册制审批-达标企业(ak_a_fundamental_registration_examination_standard_enterprises)
+  - [x] 基本面数据-增发(ak_a_fundamental_additional_issuance)
+  - [x] 基本面数据-配股(ak_a_fundamental_rights_offering)
 
 
 #### 龙虎榜
