@@ -146,36 +146,36 @@
 
 
 #### 龙虎榜
-  - [ ] 龙虎榜-营业厅排名-上榜次数最多(ak_a_topBrands_business_hall_ranking_most_on_list)
-  - [ ] 龙虎榜-营业厅排名-资金实力最强(ak_a_topBrands_business_hall_ranking_strongest_financial_strength)
-  - [ ] 龙虎榜-营业厅排名-抱团操作实力(ak_a_topBrands_business_hall_ranking_group_operation_strength)
-  - [ ] 龙虎榜-每日详情(ak_a_topBrands_daily_details)
-  - [ ] 龙虎榜-个股上榜统计(ak_a_topBrands_individual_statistics)
-  - [ ] 龙虎榜-营业上榜统计(ak_a_topBrands_business_hall_statistics)
-  - [ ] 龙虎榜-机构席位追踪(ak_a_topBrands_institutional_seat_tracking)
-  - [ ] 龙虎榜-机构席位成交明细(ak_a_topBrands_institutional_seat_transaction_details)
+  - [x] 龙虎榜-营业厅排名-上榜次数最多(ak_a_topBrands_business_hall_ranking_most_on_list)
+  - [x] 龙虎榜-营业厅排名-资金实力最强(ak_a_topBrands_business_hall_ranking_strongest_financial)
+  - [x] 龙虎榜-营业厅排名-抱团操作实力(ak_a_topBrands_business_hall_ranking_group_operation)
+  - [x] 龙虎榜-每日详情(ak_a_topBrands_daily_symbols_details)
+  - [x] 龙虎榜-个股上榜统计(ak_a_topBrands_individual_statistics)
+  - [x] 龙虎榜-营业上榜统计(ak_a_topBrands_business_hall_statistics)
+  - [x] 龙虎榜-机构席位追踪(ak_a_topBrands_institutional_seat_tracking)
+  - [x] 龙虎榜-机构席位成交明细(ak_a_topBrands_institutional_seat_transaction_details)
 
 
 #### 年报季报
 
-  - [ ] 年报季报-业绩报表(ak_a_annual_quarterly_report_performance_statements)
-  - [ ] 年报季报-业绩快报(ak_a_annual_quarterly_report_performance_express)
-  - [ ] 年报季报-业绩预告(ak_a_annual_quarterly_report_performance_forecast)
-  - [ ] 年报季报-预计披露时间(ak_a_annual_quarterly_report_expected_disclosure_time)
-  - [ ] 年报季报-资产负债表(ak_a_annual_quarterly_report_balance_sheet)
-  - [ ] 年报季报-利润表(ak_a_annual_quarterly_report_profit_statement)
-  - [ ] 年报季报-现金流量表(ak_a_annual_quarterly_report_cash_flow)
+  - [x] 年报季报-业绩报表(ak_a_annual_quarterly_report_performance_statements)
+  - [x] 年报季报-业绩快报(ak_a_annual_quarterly_report_performance_express)
+  - [x] 年报季报-业绩预告(ak_a_annual_quarterly_report_performance_forecast)
+  - [x] 年报季报-预计披露时间(ak_a_annual_quarterly_report_expected_disclosure_time)
+  - [x] 年报季报-资产负债表(ak_a_annual_quarterly_report_balance_sheet)
+  - [x] 年报季报-利润表(ak_a_annual_quarterly_report_profit_statement)
+  - [x] 年报季报-现金流量表(ak_a_annual_quarterly_report_cash_flow)
 
 
 
 #### 涨停板
 
-  - [ ] 涨停板行情-涨停股池(ak_a_raising_limit_pool)
-  - [ ] 涨停板行情-昨日涨停板股池(ak_a_raising_limit_yesterday)
-  - [ ] 涨停板行情-强势股池(ak_a_raising_limit_strong_pool)
-  - [ ] 涨停板行情-次新股池(ak_a_raising_limit_ipo_pool)
-  - [ ] 涨停板行情-炸板股池(ak_a_raising_limit_fried_plate)
-  - [ ] 涨停板行情-跌停股池(ak_a_raising_limit_limit_down)
+  - [x] 涨停板行情-涨停股池(ak_a_raising_limit_pool)
+  - [x] 涨停板行情-昨日涨停板股池(ak_a_raising_limit_yesterday)
+  - [x] 涨停板行情-强势股池(ak_a_raising_limit_strong_pool)
+  - [x] 涨停板行情-次新股池(ak_a_raising_limit_ipo_pool)
+  - [x] 涨停板行情-炸板股池(ak_a_raising_limit_fried_plate)
+  - [x] 涨停板行情-跌停股池(ak_a_raising_limit_limit_down)
 
 
 
